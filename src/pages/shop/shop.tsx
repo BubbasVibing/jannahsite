@@ -10,7 +10,6 @@ import {
 } from 'react-icons/md';
 import { 
   FaTshirt, 
-  FaShoppingBag, 
   FaLeaf, 
   FaHandHoldingHeart,
   FaArrowRight
@@ -18,7 +17,6 @@ import {
 
 const Shop: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [activeFilter, setActiveFilter] = useState('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);

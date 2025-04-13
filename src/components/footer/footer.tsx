@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import { FaInstagram, FaYoutube, FaTiktok, FaSnapchatGhost, FaTshirt, FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaTiktok, FaSnapchatGhost, FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { MdOutlineMosque, MdKeyboardArrowRight } from 'react-icons/md';
 
 const Footer: React.FC = () => {

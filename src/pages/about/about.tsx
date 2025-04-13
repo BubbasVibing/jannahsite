@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './about.css';
-import { FaHeart, FaHandHoldingHeart, FaPray, FaBook, FaTshirt, FaLeaf, FaQuran, FaGlobeAfrica } from 'react-icons/fa';
+import { FaHeart, FaHandHoldingHeart, FaPray, FaBook, FaQuran, FaGlobeAfrica } from 'react-icons/fa';
 import { MdOutlineMosque } from 'react-icons/md';
 
 const About: React.FC = () => {
