@@ -1,0 +1,1017 @@
+/* Base styles */
+.community-page {
+  padding-top: 2rem;
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero section */
+.hero-community {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-black);
+  overflow: hidden;
+  background-color: var(--color-grey-light);
+  padding: 0 2rem;
+}
+
+.hero-backdrop {
+  display: none;
+}
+
+.hero-content {
+  max-width: 900px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-icon {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: var(--color-green);
+}
+
+.hero-community h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-community p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: var(--color-grey-dark);
+  text-align: center;
+}
+
+.hero-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-green);
+  color: var(--color-green);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.social-btn svg {
+  font-size: 1.8rem;
+}
+
+.social-btn span {
+  display: none;
+}
+
+.social-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+/* Instagram CTA button */
+.instagram-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.instagram-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #5a7851;
+}
+
+/* YouTube Button */
+.youtube-btn {
+  background-color: var(--color-green);
+  color: white;
+}
+
+.youtube-btn:hover {
+  background-color: #5a7851;
+}
+
+/* TikTok Button */
+.tiktok-btn {
+  background-color: var(--color-green);
+  color: white;
+}
+
+.tiktok-btn:hover {
+  background-color: #5a7851;
+}
+
+/* Stats section */
+.stats-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-white);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 250px;
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: var(--color-green);
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: var(--color-grey-dark);
+  font-weight: 500;
+}
+
+/* Arabic Course section */
+.arabic-course-section {
+  padding: 6rem 2rem;
+  background-color: var(--color-grey-light);
+}
+
+.arabic-course-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 4rem;
+}
+
+.course-content {
+  flex: 1;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title.centered {
+  justify-content: center;
+}
+
+.title-icon {
+  font-size: 2rem;
+  color: var(--color-green);
+  margin-right: 1rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: var(--color-grey-dark);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.section-description.centered {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.course-features {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.course-features li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.check-icon {
+  color: var(--color-green);
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course-link:hover {
+  background-color: #5a7851;
+  transform: translateY(-5px);
+}
+
+.arrow-icon {
+  margin-left: 0.8rem;
+}
+
+.course-image-container {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.course-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: url('https://images.unsplash.com/photo-1609599006353-e629aaabeb39') center center;
+  background-size: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.arabic-text {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: var(--color-green);
+  color: white;
+  padding: 1.5rem 2rem;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Instagram Feed section */
+.instagram-section {
+  padding: 6rem 2rem;
+  background-color: var(--color-white);
+}
+
+.instagram-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.instagram-post {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  height: 250px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.post-image:hover .post-overlay {
+  opacity: 1;
+}
+
+.post-likes {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.post-likes svg {
+  margin-right: 0.5rem;
+  color: #ff4d4d;
+}
+
+.post-caption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: var(--color-grey-dark);
+  line-height: 1.4;
+}
+
+.cta-container {
+  text-align: center;
+}
+
+.instagram-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.instagram-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #5a7851;
+}
+
+.cta-icon {
+  margin-left: 0.8rem;
+}
+
+/* YouTube & TikTok section */
+.video-platforms-section {
+  padding: 0;
+}
+
+.platform-container {
+  display: flex;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.youtube-container {
+  background-color: #f9f9f9;
+}
+
+.tiktok-container {
+  background-color: #000000;
+  color: white;
+}
+
+.platform-content {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.youtube-color {
+  color: #ff0000;
+}
+
+.tiktok-color {
+  color: #00f2ea;
+}
+
+.platform-preview {
+  flex: 1;
+  height: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.youtube-preview {
+  background: url('/jannahwebsitecommunity1.png') center center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.tiktok-preview {
+  background: url('https://images.unsplash.com/photo-1596558450268-9c27524ba856') center center;
+  background-size: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #ff0000;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid white;
+  margin-left: 5px;
+}
+
+.tiktok-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiktok-icon {
+  font-size: 5rem;
+  color: #00f2ea;
+  filter: drop-shadow(0 0 10px rgba(0, 242, 234, 0.5));
+}
+
+.platform-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 2rem;
+}
+
+.platform-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Snapchat section */
+.snapchat-section {
+  padding: 6rem 2rem;
+  background-color: #fffc00;
+}
+
+.snapchat-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.snapchat-ghost {
+  font-size: 8rem;
+  color: #000000;
+}
+
+.snapchat-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.snapchat-content p {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.snapchat-username {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.snapchat-username span {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.snapchat-btn {
+  background-color: #000000;
+  color: #fffc00;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.snapchat-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials section */
+.testimonials-section {
+  padding: 6rem 2rem;
+  background-color: var(--color-grey-light);
+  text-align: center;
+}
+
+.testimonials-carousel {
+  position: relative;
+  max-width: 800px;
+  height: 300px;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-content {
+  flex: 1;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.quote {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 6rem;
+  color: rgba(74, 103, 65, 0.1);
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-content p {
+  font-size: 1.1rem;
+  color: var(--color-grey-dark);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1rem;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.user-info h4 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--color-black);
+}
+
+.user-info span {
+  color: var(--color-grey-dark);
+  font-size: 0.9rem;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--color-green);
+}
+
+/* Donation section */
+.donation-section {
+  padding: 6rem 2rem;
+  background-color: var(--color-white);
+}
+
+.donation-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.donation-amount {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.donation-amount:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.donation-amount.recommended {
+  border: 2px solid var(--color-green);
+  background-color: rgba(74, 103, 65, 0.05);
+}
+
+.recommended-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-green);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.amount-description {
+  color: var(--color-grey-dark);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.donation-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #5a7851;
+  transform: translateY(-5px);
+}
+
+.donate-icon {
+  margin-right: 1rem;
+}
+
+.donation-note {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  color: var(--color-grey-dark);
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .hero-social-links {
+    gap: 0.8rem;
+  }
+  
+  .social-btn {
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .stats-container {
+    gap: 3rem;
+  }
+  
+  .arabic-course-container {
+    flex-direction: column;
+  }
+  
+  .course-image-container {
+    width: 100%;
+  }
+  
+  .platform-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .snapchat-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .snapchat-username {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-community {
+    height: 40vh;
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero-icon {
+    font-size: 3.5rem;
+  }
+  
+  .hero-community h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-community p {
+    font-size: 1.1rem;
+  }
+  
+  .social-btn {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .instagram-feed {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .testimonials-carousel {
+    height: 400px;
+  }
+  
+  .donation-amounts {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .donation-amount {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Color variables */
+:root {
+  --accent-blue: #4a6f8c;
+  --accent-blue-light: #7493ad;
+  --accent-blue-dark: #375169;
+  --accent-blue-bg: rgba(74, 111, 140, 0.1);
+}
+
+/* Social Split Section */
+.social-split-container {
+  display: flex;
+  min-height: 500px;
+  width: 100%;
+  margin-top: 3rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.social-half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem;
+  transition: all 0.3s ease;
+}
+
+.social-half:hover {
+  flex: 1.2;
+}
+
+.social-half::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.tiktok-half {
+  background: linear-gradient(135deg, var(--color-grey-light) 0%, var(--accent-blue-bg) 100%);
+  color: var(--color-black);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tiktok-half .title-icon {
+  color: var(--accent-blue);
+}
+
+.snapchat-half {
+  background: linear-gradient(135deg, var(--accent-blue-bg) 0%, var(--color-grey-light) 100%);
+  color: var(--color-black);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.snapchat-half .title-icon {
+  color: var(--color-green);
+}
+
+.social-content {
+  max-width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+
+.social-half .section-title {
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-half .platform-cta {
+  background-color: var(--accent-blue);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tiktok-half .platform-cta {
+  background-color: var(--accent-blue);
+}
+
+.snapchat-half .platform-cta {
+  background-color: var(--color-green);
+}
+
+.social-half .platform-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.snapchat-username {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  margin-top: 1rem;
+  border: 2px dashed var(--color-green);
+}
+
+.snapchat-username span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-black);
+}
+
+@media (max-width: 992px) {
+  .social-split-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .social-half {
+    padding: 4rem 2rem;
+  }
+  
+  .social-half:hover {
+    flex: 1;
+  }
+  
+  .tiktok-half {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .snapchat-half {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .social-content {
+    max-width: 90%;
+  }
+}
